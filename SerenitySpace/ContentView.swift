@@ -9,13 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                Text("How are you feeling today?")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Color("AccentColor")
+                Image("emotions")
+                    .resizable()
+                
+            }
+            HStack {
+                Button("Happy") {
+                }
+                Spacer()
+                Button("Anxious") {
+                    
+                }
+                Spacer()
+                Button("Sad") {
+                    
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
