@@ -14,22 +14,22 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.top, 40)
-
+                
                 Image("emotions")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 400)
-
+                
                 HStack {
                     Button("Happy") {
-                       
+                        
                     }
                     .padding()
                     .background(Color.yellow)
                     .cornerRadius(15)
                     .font(.title)
                     Button("Anxious") {
-                       
+                        
                     }
                     .padding()
                     .background(Color.pink)
