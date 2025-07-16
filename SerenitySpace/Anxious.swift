@@ -15,7 +15,10 @@ struct Anxious: View {
                 .fontWeight(.bold)
             
         }
-    }
+        
+        Text("Why are you feeling anxious? What made you feel this way?")
+          TextField("      Tell us why you feel anxious? ", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)}
+    self.view?.backgroundColor = UIColor(names: "AppBackgroundColor")!
 }
 
 #Preview {
