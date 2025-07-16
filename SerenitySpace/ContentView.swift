@@ -38,7 +38,15 @@ struct ContentView: View {
                                 .cornerRadius(15)
                                 .font(.title)
                         }
-                        NavigationLink(destination: Sad()){
+
+                        Button("Sad!") {
+                            
+                        }
+                        .padding()
+                        .background(Color.black)
+                        .cornerRadius(15)
+                        .font(.title)
+              NavigationLink(destination: Sad()){
                             Text("Sad!")
                                 .padding()
                                 .background(Color.black)
@@ -59,4 +67,3 @@ struct ContentView: View {
         ContentView()
     }
     
-
