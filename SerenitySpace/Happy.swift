@@ -9,7 +9,18 @@ import SwiftUI
 
 struct Happy: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack {
+                Text("Feeling Happy?")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.green)
+                Text("Choose a prompt to journal about!")
+                Button("Share a happy moment from today.") {
+                    
+                }
+                    
+            }
+        }
     }
 }
 
