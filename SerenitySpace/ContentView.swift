@@ -52,10 +52,24 @@ struct ContentView: View {
                     .padding()
                 }
             }
+
         }
     }
 
     #Preview {
         ContentView()
     }
+
+
+            .padding()
+            
+            
+            
+        }
+    }
+    
+}
+#Preview {
+    ContentView()
+}
 
