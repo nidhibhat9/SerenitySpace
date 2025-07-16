@@ -35,7 +35,7 @@ struct ContentView: View {
                     .background(Color.pink)
                     .cornerRadius(15)
                     .font(.title)
-                    Button("Sad") {
+                    Button("Sad!") {
                         
                     }
                     .padding()
@@ -49,6 +49,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 #Preview {
     ContentView()
