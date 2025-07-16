@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct Happy: View {
+    @State private var journalBox = ""
     var body: some View {
         ZStack {
+            Color(Color(hue: 0.842, saturation: 0.114, brightness: 0.973)).edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Feeling Happy?")
+                Text("Glad to hear you're feeling Happy!")
                     .font(.largeTitle)
-                    .foregroundColor(Color.green)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    .padding(40)
                 Text("Choose a prompt to journal about!")
-                Button("Share a happy moment from today.") {
+                Button("What made you smile today?") {
+                    
+                }
+                Button("What are you most grateful for?") {
+                    
+                }
+                Button("What's a happy memory you cherish?") {
                     
                 }
                     
