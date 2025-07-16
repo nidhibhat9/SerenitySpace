@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2C1F204A2E27E7EC00F1EA96 /* SerenitySpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F20492E27E7EC00F1EA96 /* SerenitySpaceUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BD24BAF92E26AD9E007A27EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,20 +28,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1F20492E27E7EC00F1EA96 /* SerenitySpaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerenitySpaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD24BAEB2E26AD9C007A27EB /* SerenitySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerenitySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD24BAF82E26AD9E007A27EB /* SerenitySpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerenitySpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD24BB022E26AD9E007A27EB /* SerenitySpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerenitySpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2C1F20572E2826EE00F1EA96 /* Exceptions for "SerenitySpace" folder in "SerenitySpace" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SerenitySpaceTests/SerenitySpaceTests.swift,
+			);
+			target = BD24BAEA2E26AD9C007A27EB /* SerenitySpace */;
+		};
+		2C1F20582E2826EE00F1EA96 /* Exceptions for "SerenitySpace" folder in "SerenitySpaceTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SerenitySpaceTests/SerenitySpaceTests.swift,
+			);
+			target = BD24BAF72E26AD9E007A27EB /* SerenitySpaceTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BD24BAED2E26AD9C007A27EB /* SerenitySpace */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2C1F20572E2826EE00F1EA96 /* Exceptions for "SerenitySpace" folder in "SerenitySpace" target */,
+				2C1F20582E2826EE00F1EA96 /* Exceptions for "SerenitySpace" folder in "SerenitySpaceTests" target */,
+			);
 			path = SerenitySpace;
-			sourceTree = "<group>";
-		};
-		BD24BAFB2E26AD9E007A27EB /* SerenitySpaceTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SerenitySpaceTests;
 			sourceTree = "<group>";
 		};
 		BD24BB052E26AD9E007A27EB /* SerenitySpaceUITests */ = {
@@ -76,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				BD24BAED2E26AD9C007A27EB /* SerenitySpace */,
-				BD24BAFB2E26AD9E007A27EB /* SerenitySpaceTests */,
 				BD24BB052E26AD9E007A27EB /* SerenitySpaceUITests */,
+				2C1F20492E27E7EC00F1EA96 /* SerenitySpaceUITestsLaunchTests.swift */,
 				BD24BAEC2E26AD9C007A27EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,9 +150,6 @@
 			);
 			dependencies = (
 				BD24BAFA2E26AD9E007A27EB /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				BD24BAFB2E26AD9E007A27EB /* SerenitySpaceTests */,
 			);
 			name = SerenitySpaceTests;
 			packageProductDependencies = (
@@ -250,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1F204A2E27E7EC00F1EA96 /* SerenitySpaceUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

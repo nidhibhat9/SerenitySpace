@@ -17,12 +17,11 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(.top, 40)
-                    
-                    Image("emotions")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 400)
-                    
+                
+                            Image("emotions")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 400)
                     
                     HStack {
                         NavigationLink(destination: Happy()){
@@ -31,7 +30,7 @@ struct ContentView: View {
                                 .background(Color.yellow)
                                 .cornerRadius(15)
                                 .font(.title)
-                            }
+                        }
                         NavigationLink(destination: Anxious()){
                             Text("Anxious")
                                 .padding()
@@ -39,23 +38,25 @@ struct ContentView: View {
                                 .cornerRadius(15)
                                 .font(.title)
                         }
-                            Button("Sad!") {
-                                
-                            }
-                            .padding()
-                            .background(Color.black)
-                            .cornerRadius(15)
-                            .font(.title)
-                            
+                        NavigationLink(destination: Sad()){
+                            Text("Sad!")
+                                .padding()
+                                .background(Color.black)
+                                .cornerRadius(15)
+                                .font(.title)
                         }
+                        
                     }
-                    .padding()
                 }
+                .padding()
             }
-
+        }
+        
+        
+    }
+}
+    #Preview {
+        ContentView()
+    }
     
-}
-#Preview {
-    ContentView()
-}
 
