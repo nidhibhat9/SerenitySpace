@@ -8,6 +8,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+
         NavigationStack {
             VStack {
                 Text("How are you feeling today?")
@@ -46,9 +47,11 @@ struct ContentView: View {
                 }
             }
             .padding()
+
+            
+
         }
     }
-}
 
 
 #Preview {

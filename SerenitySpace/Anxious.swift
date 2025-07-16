@@ -14,6 +14,7 @@ struct Anxious: View {
                 .font(.title)
                 .fontWeight(.bold)
             
+
             
             
             Text("Why are you feeling anxious? What made you feel this way?")
@@ -21,6 +22,11 @@ struct Anxious: View {
         
     }
     
+
+        }
+        
+
+
 }
 
 #Preview {
