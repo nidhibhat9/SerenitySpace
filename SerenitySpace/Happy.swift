@@ -17,7 +17,7 @@ struct Happy: View {
                 Text("Glad to hear you're feeling Happy!")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color(hue: 0.777, saturation: 0.971, brightness: 0.532))
                     .multilineTextAlignment(.center)
                     .padding(40)
                 Spacer()

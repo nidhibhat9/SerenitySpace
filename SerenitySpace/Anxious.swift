@@ -15,10 +15,10 @@ struct Anxious: View {
             Color(hue: 0.842,saturation: 0.114, brightness: 0.973 ).edgesIgnoringSafeArea(.all)
             
             VStack (alignment: .center, spacing: 30) {
-                Text("Feeling Anxoius?")
+                Text("Feeling Anxious?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color(hue: 0.771, saturation: 0.953, brightness: 0.462))
                 .padding(.top)
               
                 
