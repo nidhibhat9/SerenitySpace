@@ -53,20 +53,6 @@ struct ContentView: View {
                 }
             }
 
-        }
-    }
-
-    #Preview {
-        ContentView()
-    }
-
-
-            .padding()
-            
-            
-            
-        }
-    }
     
 }
 #Preview {

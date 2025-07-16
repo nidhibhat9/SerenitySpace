@@ -9,26 +9,34 @@ import SwiftUI
 
 struct Anxious: View {
     var body: some View {
-        VStack {
-            Text("Anxious Prompt Questions")
-                .font(.title)
-                .fontWeight(.bold)
+        ZStack {
+            Color(hue: 0.842,saturation: 0.114, brightness: 0.973 ).edgesIgnoringSafeArea(.all)
             
-
+            VStack {
+                Text("Feeling Anxoius?")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("Choose a prompt to journal about!")
+                Button("Share a happy moment from today.") {
+                    
+                }
+                
+                
+                
+                
+                
+            }
             
             
-            Text("Why are you feeling anxious? What made you feel this way?")
-            TextField("      Tell us why you feel anxious? ", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)}
+        }
         
+        
+        
+        
+    }
+    #Preview {
+        Anxious()
     }
     
 
-        }
-        
-
-
-
-
-#Preview {
-    Anxious()
 }
