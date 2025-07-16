@@ -34,9 +34,9 @@ struct Anxious: View {
         
         
     }
+}
     #Preview {
         Anxious()
     }
     
 
-}
