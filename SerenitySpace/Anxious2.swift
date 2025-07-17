@@ -1,5 +1,5 @@
 //
-//  Anxious 2.0.swift
+//  Anxious2.swift
 //  SerenitySpace
 //
 //  Created by Scholar on 7/17/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Anxious_2_0: View {
+struct Anxious2: View {
     var body: some View {
         ZStack {
             Color(hue: 0.842,saturation: 0.114, brightness: 0.973 ).edgesIgnoringSafeArea(.all)
@@ -26,5 +26,5 @@ struct Anxious_2_0: View {
 }
 
 #Preview {
-    Anxious_2_0()
+    Anxious2()
 }
