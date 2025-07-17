@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct Sad: View {
-    @State private var showTextField: Bool = false
+    @State private var showTextField: Int = 0
     @State private var textenter: String = ""
     var body: some View {
         ZStack {
@@ -25,20 +25,25 @@ struct Sad: View {
                     .multilineTextAlignment(.center)
                 
                 Button("1. What’s been weighing on your mind lately? Let it all out <3") {
-                    showTextField = true
+                    showTextField = 1
+                    textenter = ""
                 }
                 
                 Button("2. You’re feeling sad, and that’s okay. What’s one thing you wish someone would say to you right now? " ) {
-                    showTextField = true
+                    showTextField = 2
+                    textenter = ""
                 }
                 
                 Button("3. You’ve made it through hard days before — what’s something that helped you feel better in the past when you felt low?") {
-                    showTextField = true
+                    showTextField = 3
+                    textenter = ""
                 }
-                if showTextField {
-                    TextField("Write your thoughts here...", text: $textenter)
+                if showTextField != 0 {
+                    TextField("Answer prompt #\(showTextField) here...", text: $textenter)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.top,10)
+                        .padding(.top,15)
+                        .font(.title)
+                        .fontWeight(.bold)
                 }
                 Spacer()
                     .padding()
