@@ -48,6 +48,7 @@ struct Anxious: View {
                         .font(.title)
                         .fontWeight(.bold)
                 }
+                    Spacer()
                     .padding()
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 
