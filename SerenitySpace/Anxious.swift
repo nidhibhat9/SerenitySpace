@@ -53,7 +53,12 @@ struct Anxious: View {
                         .padding()
                 }
                     
-                
+                Button("SUBMIT") {
+                }
+                    .padding()
+                    .background(Color(hue: 0.758, saturation: 0.973, brightness: 0.319))
+                    .cornerRadius(15)
+                    .font(.title)
                 
             }
             
