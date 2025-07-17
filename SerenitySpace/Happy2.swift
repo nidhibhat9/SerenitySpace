@@ -25,14 +25,15 @@ struct Happy2: View {
             
                 .foregroundColor(Color(hue: 0.75, saturation: 0.3, brightness: 0.99))
                 .multilineTextAlignment(.center)
+            Text("💜🩵💙")
             Button("Get a recommendation here!") {
                 recs = arr.randomElement() ?? "Take 3 deep breaths"
             }
+           
             Text(recs)
                 .font(.title2)
                 .fontWeight(.bold)
-                .foregroundColor(Color(hue:0.6, saturation: 0.32, brightness: 1.0))
-                .padding()
+                .foregroundColor(Color.black)
         }
         .padding()
     }

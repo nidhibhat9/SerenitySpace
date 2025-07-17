@@ -27,24 +27,24 @@ struct Anxious2: View {
         ZStack {
             Color(Color(hue: 0.47, saturation: 0.114, brightness: 0.973)).edgesIgnoringSafeArea(.all)
             VStack(spacing:30) {
-                Text("THANK YOU FOR SUBMITTING!!")
-                    .font(.title2)
-                    .fontWeight(.heavy)
-                    .foregroundColor(Color(hue: 0.77, saturation: 0.364, brightness: 0.869))
-                Text("We hope you feel better, here are some recommdations")
-                    .font(.footnote)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color(hue: 0.779, saturation: 0.389, brightness: 0.84))
-                    .lineLimit(nil)
+                Text("Thank you for journaling your thoughts! Here are some recommendations to keep improving your mental health and feel good :)")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, alignment: .top)
+                
+                    .foregroundColor(Color(hue: 0.75, saturation: 0.3, brightness: 0.99))
+                    .multilineTextAlignment(.center)
+               
                 Text("💜🩵💙")
-                Text(someRecs)
-                    .font(.title2)
-                    .padding()
+            
                 
             
-                Button("RECOMMENDATIONS") {
+                Button("Get a recommendation here!") {
                     someRecs = recs.randomElement() ?? "Take 3 deep breaths"                }
-               
+                Text(someRecs)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
                     
                     
                                            }

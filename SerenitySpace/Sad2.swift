@@ -34,10 +34,12 @@ struct Sad2: View {
                 
                     .foregroundColor(Color(hue: 0.75, saturation: 0.3, brightness: 0.99))
                     .multilineTextAlignment(.center)
+                Text("💜🩵💙")
                 Button("Get a recommendation here!") {
                     someRecs = recs.randomElement() ?? "Take 3 deep breaths"
                         
                 }
+                
                 Text(someRecs)
                     .font(.title2)
                     .fontWeight(.bold)
