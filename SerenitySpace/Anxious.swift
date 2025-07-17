@@ -8,69 +8,62 @@
 import SwiftUI
 
 struct Anxious: View {
-    @State private var showTextField: Bool = false
+    @State private var showTextField: Int = 0
     @State private var textenter: String = ""
     var body: some View {
         ZStack {
-            Color(hue: 0.842,saturation: 0.114, brightness: 0.973 ).edgesIgnoringSafeArea(.all)
+            Color(Color(hue: 0.842, saturation: 0.114, brightness: 0.973)).edgesIgnoringSafeArea(.all)
             
-            VStack (alignment: .center, spacing: 30) {
+            VStack (alignment: .center, spacing: 30){
                 Text("Feeling Anxious?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(Color(hue: 0.771, saturation: 0.953, brightness: 0.462))
-                .padding(.top)
-              
+                    .foregroundColor(Color.white)
+                    .padding(.top)
                 
-                Text("Choose a prompt to make you feel better!")
+                Text("Choose a prompt to journal about and feel better!")
                     .font(.title2)
                     .multilineTextAlignment(.center)
-                Button("1. What made you feel anxious today?") {
-                    showTextField.toggle()
-                }
-                if showTextField {
-                    TextField("Answer prompt 1 here...", text: $textenter)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
+                
+                Button("1. What made you anxious today?") {
+                    showTextField = 1
+                    textenter = ""
                 }
                 
+                Button("2. Have you talked to a trusted adult to vent to?" ) {
+                    showTextField = 2
+                    textenter = ""
+                }
                 
-                Button("2. How do you control your worries?") {
-                    showTextField.toggle()
+                Button("3. Think about how you can handle this feeling. Maybe you can do the same thing again?") {
+                    showTextField = 3
+                    textenter = ""
                 }
-                if showTextField {
-                    TextField("Answer prompt 2 here...", text: $textenter)
+                if showTextField != 0 {
+                    TextField("Answer prompt #\(showTextField) here...", text: $textenter)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
+                        .padding(.top,15)
+                        .font(.title)
+                        .fontWeight(.bold)
                 }
-               
-                Button("3. Have you tried talking to a trusted adult about your feeling? Why or Why not?") {
-                    showTextField.toggle()
-                }
-                if showTextField {
-                    TextField("Answer prompt 3 here...", text: $textenter)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                }
-                    
-                Button("SUBMIT") {
-                }
+                Spacer()
                     .padding()
-                    .background(Color(hue: 0.758, saturation: 0.973, brightness: 0.319))
-                    .cornerRadius(15)
-                    .font(.title)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 
+               
+                NavigationLink(destination: Anxious2()) {
+                    Text("Submit!")
+                        .font(.headline)
+                        .fontWeight(.black)
+                }
+                }
             }
-            
-            
+           
         }
-        
-        
-        
     }
+
+#Preview {
+    Anxious()
 }
-    #Preview {
-        Anxious()
-    }
     
 
