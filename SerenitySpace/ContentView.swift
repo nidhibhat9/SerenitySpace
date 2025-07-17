@@ -28,26 +28,26 @@ struct ContentView: View {
                         NavigationLink(destination: Happy()){
                             Text("Happy")
                                 .padding()
-                                .background(Color.white)
+                                .background(Color(hue: 0.47, saturation: 0.114, brightness: 0.973))
                                 .cornerRadius(15)
                                 .font(.title)
-                                .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
+                                .foregroundColor(Color.black)
                         }
                         NavigationLink(destination: Anxious()){
                             Text("Anxious")
                                 .padding()
-                                .background(Color.white)
+                                .background(Color(hue: 0.47, saturation: 0.114, brightness: 0.973))
                                 .cornerRadius(15)
                                 .font(.title)
-                                .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
+                                .foregroundColor(Color.black)
                         }
                         NavigationLink(destination: Sad()){
                             Text("Sad")
                                 .padding()
-                                .background(Color.white)
+                                .background(Color(hue: 0.47, saturation: 0.114, brightness: 0.973))
                                 .cornerRadius(15)
                                 .font(.title)
-                                .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
+                                .foregroundColor(Color.black)
                         }
                         
                     }
