@@ -36,12 +36,14 @@ struct Sad2: View {
                     .multilineTextAlignment(.center)
                 Button("Get a recommendation here!") {
                     someRecs = recs.randomElement() ?? "Take 3 deep breaths"
+                        
                 }
                 Text(someRecs)
                     .font(.title2)
                     .fontWeight(.bold)
-                    .foregroundColor(Color(hue:0.6, saturation: 0.32, brightness: 1.0))
-                    .padding()
+                    .foregroundColor(Color.black)
+                    
+                    
             }
             .padding()
         }
