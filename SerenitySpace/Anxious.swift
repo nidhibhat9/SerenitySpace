@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Anxious: View {
-    @State private var showTextField: Bool = false
+    @State private var showTextField: Int = 0
     @State private var textenter: String = ""
     var body: some View {
         ZStack {
@@ -26,32 +26,30 @@ struct Anxious: View {
                     .font(.title2)
                     .multilineTextAlignment(.center)
                 Button("1. What made you feel anxious today?") {
-                    showTextField.toggle()
-                }
-                if showTextField {
-                    TextField("Answer prompt 1 here...", text: $textenter)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    showTextField = 1
+                    textenter = ""                }
+                
                         .padding()
                 }
                 
                 
                 Button("2. How do you control your worries?") {
-                    showTextField.toggle()
-                }
-                if showTextField {
-                    TextField("Answer prompt 2 here...", text: $textenter)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    showTextField = 2
+                    textenter = ""                }
+                
                         .padding()
                 }
                
                 Button("3. Have you tried talking to a trusted adult about your feeling? Why or Why not?") {
-                    showTextField.toggle()
+                    showTextField = 2
+                    textenter = ""
                 }
-                if showTextField {
-                    TextField("Answer prompt 3 here...", text: $textenter)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                }
+        if showTextField != 0 {
+            TextField("Answer prompt #\(showTextField) here...", text: $textenter)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.top,15)
+                .font(.title)
+                .fontWeight(.bold)                }
                     
                 Button("SUBMIT") {
                 }
@@ -67,8 +65,7 @@ struct Anxious: View {
         
         
         
-    }
-}
+    
     #Preview {
         Anxious()
     }
