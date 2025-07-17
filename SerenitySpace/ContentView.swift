@@ -39,7 +39,7 @@ struct ContentView: View {
                                 .font(.title)
                         }
 
-                        Button("Sad!") {
+                        Button("Sad") {
                             
                         }
                         .padding()
