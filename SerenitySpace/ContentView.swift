@@ -17,6 +17,7 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(.top, 40)
+                        .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
                 
                             Image("emotions")
                             .resizable()
@@ -27,23 +28,26 @@ struct ContentView: View {
                         NavigationLink(destination: Happy()){
                             Text("Happy")
                                 .padding()
-                                .background(Color.yellow)
+                                .background(Color.white)
                                 .cornerRadius(15)
                                 .font(.title)
+                                .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
                         }
                         NavigationLink(destination: Anxious()){
                             Text("Anxious")
                                 .padding()
-                                .background(Color.pink)
+                                .background(Color.white)
                                 .cornerRadius(15)
                                 .font(.title)
+                                .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
                         }
                         NavigationLink(destination: Sad()){
                             Text("Sad")
                                 .padding()
-                                .background(Color.black)
+                                .background(Color.white)
                                 .cornerRadius(15)
                                 .font(.title)
+                                .foregroundColor(Color(hue: 0.793, saturation: 0.99, brightness: 0.6))
                         }
                         
                     }
