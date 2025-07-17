@@ -54,9 +54,12 @@ struct Anxious: View {
                
                 NavigationLink(destination: Anxious2()) {
                     Text("Submit!")
-                        .font(.headline)
-                        .fontWeight(.black)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.mint)
                 }
+                Spacer ()
+                .padding(.bottom, 30)
                 }
                 }
             }
