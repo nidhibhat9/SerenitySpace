@@ -30,21 +30,34 @@ struct Happy: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
+                    
 
                     Button("What made you smile today?") {
                         selectedPrompt = 1
                     }
+                    .foregroundColor(Color(hue: 0.777, saturation: 0.961, brightness: 0.581))
+                    .padding(40)
 
                     Button("What are you most grateful for?") {
                         selectedPrompt = 2
                     }
+                    .foregroundColor(Color(hue: 0.777, saturation: 0.961, brightness: 0.581))
+                    .padding(40)
+
 
                     Button("What's a happy memory you cherish?") {
                         selectedPrompt = 3
                     }
+                    .foregroundColor(Color(hue: 0.777, saturation: 0.961, brightness: 0.581))
+                    .padding(40)
+
                 }
 
                 if selectedPrompt != nil {
+                    Text("Great! Start Journaling!")
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(hue: 0.772, saturation: 1.0, brightness: 0.52))
                     TextField("Journal your answer here:", text: $journalBox)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
@@ -62,6 +75,7 @@ struct Happy: View {
                         selectedPrompt = nil
                         journalBox = ""
                     }
+                    .foregroundColor(.black)
                     .padding(.top)
                 }
 
