@@ -11,6 +11,8 @@ struct Anxious: View {
     @State private var showTextField: Int = 0
     @State private var textenter: String = ""
     var body: some View {
+        NavigationStack {
+            
         ZStack {
             Color(Color(hue: 0.842, saturation: 0.114, brightness: 0.973)).edgesIgnoringSafeArea(.all)
             
@@ -46,7 +48,7 @@ struct Anxious: View {
                         .font(.title)
                         .fontWeight(.bold)
                 }
-                Spacer()
+                    Spacer()
                     .padding()
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 
@@ -59,6 +61,7 @@ struct Anxious: View {
                 }
                 Spacer ()
                 .padding(.bottom, 30)
+                }
                 }
             }
            
