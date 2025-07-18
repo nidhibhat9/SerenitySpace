@@ -10,7 +10,7 @@ import SwiftUI
 struct Happy2: View {
     
     let arr = [ "Write a gratitude list",
-    "Do a random act of kindness", "Create a vision board" , "Start a new hobby" , "Write a letter to your future self"
+    "Do a random act of kindness", "Create a vision board" , "Start a new hobby" , "Write a letter to your future self", "Create a list of things that make you happy — big or small", "Write a poem about your mood" , "Smile at everyone you pass", "Text someone and tell them why you appreciate them", "Paint or draw something inspired by your mood", "Go outside and enjoy the sunshine or fresh air"
     ]
     @State private var recs = ""
 
