@@ -60,7 +60,7 @@ struct Sad: View {
                             
                     }
                     
-                    Spacer ()
+                    Spacer()
                     .padding(.bottom, 30)
                     
                 }
