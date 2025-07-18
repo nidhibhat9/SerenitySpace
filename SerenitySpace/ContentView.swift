@@ -13,6 +13,10 @@ struct ContentView: View {
             ZStack {
                 Color(hue: 0.842, saturation: 0.114, brightness: 0.973).edgesIgnoringSafeArea(.all)
                 VStack {
+                    Text("Serenity Space!")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                        .foregroundColor(Color(hue: 0.76, saturation: 0.956, brightness: 0.571))
                     Text("How are you feeling today?")
                         .font(.title)
                         .fontWeight(.bold)

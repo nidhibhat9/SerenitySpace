@@ -17,7 +17,11 @@ struct Anxious2: View {
         "Play with a stress ball",
         "Hangout with Friends",
         "Watch or rewatch a movie/show",
-        "Eat your favorite foods"
+        "Eat your favorite foods",
+        "Read books",
+        "Go ouside to the park and look at nature",
+        "Listen to music",
+        "play bored games"
     ]
     @State private var someRecs = ""
     
